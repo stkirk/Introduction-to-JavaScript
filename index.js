@@ -141,9 +141,37 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.random();
 
 function game(user, computer) {
-  /*add your code here*/
+  if (computer >= 0 && computer <= 0.33) {
+    // computer === 'rock'
+    if (user === "rock") {
+      return "it's a tie";
+    } else if (user === "paper") {
+      return "you win!";
+    } else if (user === "scissors") {
+      return "you lose!";
+    }
+  } else if (computer > 1 / 3 && computer <= 2 / 3) {
+    // computer === 'paper'
+    if (user === "rock") {
+      return "you lose!";
+    } else if (user === "paper") {
+      return "it's a tie";
+    } else if (user === "scissors") {
+      return "you win!";
+    }
+  } else if (computer > 2 / 3 && computer <= 1) {
+    // computer === 'scissors'
+    if (user === "rock") {
+      return "you win!";
+    } else if (user === "paper") {
+      return "you lose!";
+    } else if (user === "scissors") {
+      return "it's a tie";
+    }
+  }
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
