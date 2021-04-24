@@ -17,7 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge = 21;
+if (votingAge >= 18) {
+  console.log("true");
+}
 /*
 Task 1b - Values
 
@@ -28,7 +31,12 @@ Do the following:
 
    HINT: no function required
 */
-
+let var1 = 10;
+let var2 = 5;
+if (var2 === 5) {
+  var1 = var2 * 4;
+  console.log(var1);
+}
 /*
 Task 1c - Convert Strings to Numbers
 
