@@ -47,7 +47,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let stringVar = Number("1999");
+console.log(stringVar);
 /*
 Task 1d - Multiply
  
@@ -71,8 +72,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/) {
-  /*add your code here*/
+function dogYears(age) {
+  return age * 7;
 }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
