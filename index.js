@@ -141,11 +141,19 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-let computer = Math.random();
+var computer = Math.random();
+
+if (computer >= 0 && computer <= 0.33) {
+  computer = "rock";
+} else if (computer > 1 / 3 && computer <= 2 / 3) {
+  computer = "scissors";
+} else if (computer > 2 / 3 && computer <= 1) {
+  computer = "paper";
+}
+// console.log(computer);
 
 function game(user, computer) {
-  if (computer >= 0 && computer <= 0.33) {
-    // computer === 'rock'
+  if (computer === "rock") {
     if (user === "rock") {
       return "it's a tie";
     } else if (user === "paper") {
@@ -153,8 +161,7 @@ function game(user, computer) {
     } else if (user === "scissors") {
       return "you lose!";
     }
-  } else if (computer > 1 / 3 && computer <= 2 / 3) {
-    // computer === 'paper'
+  } else if (computer === "paper") {
     if (user === "rock") {
       return "you lose!";
     } else if (user === "paper") {
@@ -162,8 +169,7 @@ function game(user, computer) {
     } else if (user === "scissors") {
       return "you win!";
     }
-  } else if (computer > 2 / 3 && computer <= 1) {
-    // computer === 'scissors'
+  } else if (computer === "scissors") {
     if (user === "rock") {
       return "you win!";
     } else if (user === "paper") {
@@ -266,9 +272,7 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
-}
+function vowelCounter(string) {}
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo() {
